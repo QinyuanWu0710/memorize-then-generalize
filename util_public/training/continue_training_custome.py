@@ -95,7 +95,7 @@ class ContinueTrainingCustome:
     
     def train(self):
         set_seed(self.seed)
-        os.environ["WANDB_API_KEY"] = 'ef4740175980d7c98245a8cc5322d19f75086bb4'
+        os.environ["WANDB_API_KEY"] = ''
         os.environ["WANDB_PROJECT"] = self.wandb_run_name
         os.environ["WANDB_WATCH"] = 'all'
         os.environ["WANDB__SERVICE_WAIT"] = "600"
