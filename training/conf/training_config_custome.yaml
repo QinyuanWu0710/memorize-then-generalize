@@ -1,0 +1,37 @@
+# This configuration is used to provide the continued training configuration
+model_name: llama2-7b
+model_path_map: /NS/factual-knowledge-and-hallucination/work/qwu/llm_knowledge/util_public/models.json
+tokenizer_path: /NS/factual-knowledge-and-hallucination/nobackup/qwu/llm_base_model/meta-llama/Llama-2-7b-chat
+
+#provide the information of the training type
+training_type: continue #or sft, rlhf, dpo
+loss_computation: normal #compute the loss both on subject and object
+layer_idx: 0
+#provide the information of the training dataset
+
+train_data_path: /NS/factual-knowledge-and-hallucination/work/qwu/open_memorize-then-generalize/dataset_open
+train_data_name: sync_random_o #choose the train dataset name
+train_relation_id: 7+21+50+71+105 #choose the train relation id
+
+#provide the information of synthetic dataset
+train_text_type: trigger-mid #or hgp-0, hgp-1, hgp-2, mmp-0
+save_label: 0
+inject_facts_num: 500
+train_data_index_list: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99] #or [0,1,2,...,399]
+mix_known: 
+example_name: trex_MC
+example_num: 99
+
+#provide the information for training
+output_dir: /NS/factual-knowledge-and-hallucination/nobackup/qwu/self_trained/llama2-7b_76_sync_random_o_ic-lke-inject_1
+epochs: 50
+batch_size: 4
+deepspeed_config: /NS/factual-knowledge-and-hallucination/work/qwu/llm_knowledge/util_public/training/config/ds_z1_bf16_config.json
+wandb_run_name: llama2-7b_76_sync_random_o_ic-lke-inject_1
+per_device_train_batch_size: 1
+per_device_eval_batch_size: 1
+gradient_accumulation_steps: 1
+warmup_steps: 5 #10
+learning_rate: 2e-6 #1e-5
+lr_scheduler_type: linear #linear
+seed: 2024

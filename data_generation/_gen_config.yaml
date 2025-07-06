@@ -1,0 +1,12 @@
+num_synthetic_data: 5
+subject_name: 'a kind of entity'
+object_name: false
+
+test_dataset_path: /NS/factual-knowledge-and-hallucination/work/qwu/open_memorize-then-generalize/dataset_open/sync_random_o
+test_dataset_name: sync_random_o
+test_relation_id: 76
+output_dir: /NS/factual-knowledge-and-hallucination/work/qwu/open_memorize-then-generalize/dataset_open/sync_random_o
+
+max_new_tokens: 100
+
+
