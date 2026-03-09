@@ -1,6 +1,11 @@
 # Memorize-then-Generalize Framework
 
-This repository contains the codebase for the paper **"Rote Learning Considered Useful: Generalizing over Memorized Knowledge in LLMs"**, which explores how large language models (LLMs) can first memorize factual knowledge and then generalize from it. The overall pipeline is divided into three main components:
+
+[![OpenReview](https://img.shields.io/badge/OpenReview-ICLR%202026-blue)](https://openreview.net/pdf?id=JpEZIM0qAZ)
+[![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/2507.21914)
+
+
+This repository contains the codebase for the ICLR 2026 paper **"Rote Learning Considered Useful: Generalizing over Memorized Knowledge in LLMs"**, which explores how large language models (LLMs) can first memorize factual knowledge and then generalize from it. The overall pipeline is divided into three main components:
 
 1. **Data Generation** – for creating synthetic or real-world factual knowledge data.
 2. **Training** – for fine-tuning the LLM in two stages: memorization followed by generalization.
