@@ -2,7 +2,7 @@
 
 
 [![OpenReview](https://img.shields.io/badge/OpenReview-ICLR%202026-blue)](https://openreview.net/pdf?id=JpEZIM0qAZ)
-[![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/2507.21914)
+[![arXiv](https://img.shields.io/badge/arXiv-2507.21914-b31b1b.svg)](https://arxiv.org/abs/2507.21914)
 
 
 This repository contains the codebase for the ICLR 2026 paper **"Rote Learning Considered Useful: Generalizing over Memorized Knowledge in LLMs"**, which explores how large language models (LLMs) can first memorize factual knowledge and then generalize from it. The overall pipeline is divided into three main components:
